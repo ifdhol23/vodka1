@@ -204,7 +204,7 @@ def SEND_MESSAGE(op):
                     contact = client.getContact(key)
                     sendMessage(msg.to, ""+contact.displayName+" I invited you")
                 if msg.text == "/battle":
-                    sendMessage(msg.to, "/join")
+                    client.sendMessage(msg.to, "/join")
                 if msg.text == "me":
                     M = Message()
                     M.to = msg.to
