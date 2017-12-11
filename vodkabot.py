@@ -203,8 +203,8 @@ def SEND_MESSAGE(op):
                     client.inviteIntoGroup(msg.to, [key])
                     contact = client.getContact(key)
                     sendMessage(msg.to, ""+contact.displayName+" I invited you")
-                if msg.text == "/battle":
-                    client.sendMessage(msg.to, "/join")
+                if msg.text in ["/battle"];
+                    cl.sendText(msg.to,"/join")
                 if msg.text == "me":
                     M = Message()
                     M.to = msg.to
